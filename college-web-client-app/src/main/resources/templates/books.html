@@ -1,0 +1,26 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Book List</title>
+</head>
+<body>
+<h1>Books Page</h1>
+
+<div th:if="${books.empty}">
+  <div>No albums found</div>
+</div>
+
+<div th:each="book : ${books}">
+  <p><span th:text="${book.title}"></span></p>
+</div>
+
+
+<div>
+  <a href="/">Home</a>
+</div>
+
+</body>
+</html>
