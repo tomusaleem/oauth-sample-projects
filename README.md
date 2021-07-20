@@ -37,7 +37,7 @@
 ### college-web-client-app
 
 - Import project in IDE
-- Open application.properties file and update client-secret value with the one you get while creating Client on keycloak
+- Open application.properties file and update client-secret value with the one you get while creating Client on keycloak server.
 - Run the project and application will be accessible on port 8082
 
 ### Demo instructions
@@ -46,6 +46,6 @@
 - Go to secret books page by clicking on the ***secret books*** button.
 - These book's information detail is fetched from the resource server which demands access token and this access tokekn can be accessed from the Keyclock server
 - When you click on secret books button it will redirect you to the keyclaok authentication page where user provide username & password
-- After successful authentication, app internally get access toke from keycloak server and this token is used to get books detail from resource server.
+- After successful authentication, app internally get access token from keycloak server and this token is used to get books detail from resource server.
 
 
